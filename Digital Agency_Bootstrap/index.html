@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Digital Agency Web Responsive - Bootstrap, JQuery, Responsive</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- NavBar  -->
+
+    <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-xs">
+
+        <div class="container">
+
+            <a class="navbar-brand d-none d-sm-inline-block" href="#">
+                <img src="images/logoBallVector.png" alt="Logo" style="width: 100px;">
+                Digital Agency
+            </a>
+
+            <button class="navbar-toggler hamburger ml-auto" type="button" data-toggle="collapse" data-target="#togglerNav"
+                aria-controls="togglerNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon"><span></span><span></span><span></span><span></span> </div>  <!--  Span correspondiente a las rayas del menú Hamburguesa  -->
+                
+            </button>
+
+
+
+            <div class="collapse navbar-collapse contenedor" id="togglerNav">
+
+                <div class="navbar-nav ml-auto">
+
+                    <div class="contenedorMenu ">
+                        <a class="nav-item nav-link m-auto active" href="#">Home</a>
+                        <a class="nav-item nav-link m-auto" href="#about">About</a>
+                        <a class="nav-item nav-link m-auto" href="#services">Services</a>
+                        <a class="nav-item nav-link m-auto" href="#contact">Contact</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <header>
+
+
+        <!--  CAROUSEL  -->
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide mb-5" data-ride="carousel" data-interval="3500">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
+                <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
+            </ol>
+
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" style="background-image: url('images/carousel1.jpg')">
+                    <div class="carousel-caption  animated fadeInDown d-none d-md-block">
+                        <h2 class="display-4">Título del primer slice</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url('images/carousel2.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Título del Segundo slice</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background-image: url('images/carousel3.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="display-4">Título del tercer slice</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </header>
+
+
+
+    <!--  ABOUT SECTION  -->
+
+    <section class="container mb-5" id="about">
+
+        <div id="about">
+
+            <div class="row">
+
+
+                <section class="content col-sm-12 mb-4">
+                    <h1>We’re experts in <strong><em>strategy, design, innovation</em></strong> and brand experience.</h1>
+                    <h3 class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, asperiores! Architecto officiis necessitatibus illum accusantium cumque animi provident eos excepturi.</h3>
+                    <a href="#">Read More</a>
+                </section>
+
+
+                <div class="col-md-6 ">
+                    <img class="mb-4" src="images/aboutMember.jpg" alt="About Member">
+                    <img src="images/aboutOffice.jpg" alt="About office">
+                </div>
+
+                <div class="col-md-6 d-flex align-items-center">
+                    <img src="images/aboutIdeas.jpg" alt="About Ideas">
+                </div>
+
+
+            </div>
+
+
+    </section>
+
+
+
+    <!--  PROJECTS SECTION  -->
+
+    <section class="container-fluid mb-5" id="projects">
+
+
+        <section class="content mb-4">
+            <h2 class="display-4">Recent <em>Projects</em></h2>
+        </section>
+
+        <div class="row">
+
+            <div class="card-columns">
+
+                <div class="card col-md-12 slideCardLeft">
+                    <a href="#"><img class="img-fluid" src="images/logoBrand1.jpg" alt="Logo Brand"></a>
+                    <div class="card-img-overlay overlay slideInLeft pl-4">
+                        <p class="card-text">Servicio digital ofrecido para dicho proyecto</p>
+                        <h3 class="card-title">Nombre de la Empresa</h3>
+                    </div>
+                </div>
+
+                <div class="card col-md-12 slideCardLeft">
+                    <a href="#"><img class="img-fluid" src="images/menu1.jpg" alt="Menu Design"></a>
+                    <div class="card-img-overlay overlay slideInLeft pl-4">
+                        <p class="card-text">Servicio digital ofrecido para dicho proyecto</p>
+                        <h3 class="card-title">Nombre de la Empresa</h3>
+                    </div>
+                </div>
+
+                <div class="card col-md-12 slideCardLeft">
+                    <a href="#"><img class="img-fluid" src="images/packagingDesign.jpg" alt="Packaging Design"></a>
+                    <div class="card-img-overlay overlay slideInLeft pl-4">
+                        <p class="card-text">Packaging design</p>
+                        <h3 class="card-title">Nombre de la Empresa</h3>
+                    </div>
+                </div>
+
+                <div class="card col-md-12 slideCardLeft">
+                    <a href="#"><img class="img-fluid" src="images/restaurantFacade.jpg" alt="Façade Design"></a>
+                    <div class="card-img-overlay overlay slideInLeft pl-4">
+                        <p class="card-text">Naming and Nomenclature</p>
+                        <h3 class="card-title">Nombre de la Empresa</h3>
+                    </div>
+                </div>
+
+                <div class="card col-md-12 slideCardRight">
+                    <a href="#"><img class="img-fluid" src="images/cupDesign.jpg" alt="Brand Developement"></a>
+                    <div class="card-img-overlay overlay slideInRight pl-4">
+                        <p class="card-text">Brand Development</p>
+                        <h3 class="card-title">Nombre de la Empresa</h3>
+                    </div>
+                </div>
+
+                <div class="card col-md-12 slideCardRight ">
+                    <a href="#"><img class="img-fluid" src="images/logoBrand2.jpg" alt="Brand Developement"></a>
+                    <div class="card-img-overlay overlay slideInRight pl-4">
+                        <p class="card-text">Brand Development</p>
+                        <h3 class="card-title">Nombre de la Empresa</h3>
+                    </div>
+                </div>
+
+                <div class="card col-md-12 slideCardRight">
+                    <a href="#"><img class="img-fluid" src="images/menu2.jpg" alt="Menu Design"></a>
+                    <div class="card-img-overlay overlay slideInRight pl-4">
+                        <p class="card-text">Naming and Nomenclature</p>
+                        <h3 class="card-title">Nombre de la Empresa</h3>
+                    </div>
+                </div>
+
+                <div class="card col-md-12 slideCardRight">
+                    <a href="#"><img class="img-fluid" src="images/packagingdesign2.jpg" alt="Packaging Design"></a>
+                    <div class="card-img-overlay overlay slideInRight pl-4">
+                        <p class="card-text">Packaging Design</p>
+                        <h3 class="card-title">Nombre de la Empresa</h3>
+                    </div>
+                </div>
+
+                <div class="card col-md-12 slideCardRight">
+                    <a href="#"><img class="img-fluid" src="images/webDesign.jpg" alt="Digital Branding"></a>
+                    <div class="card-img-overlay overlay slideInRight pl-4">
+                        <p class="card-text">Digital Branding</p>
+                        <h3 class="card-title">Nombre de la Empresa</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <!--  SERVICES SECTION-->
+
+    <section class="container text-center mb-5" id="services">
+
+        <div class="row">
+
+
+            <article class="col-lg-3 col-md-6 col-sm-12">
+                <img class="mx-auto" src="images/namingNomenclature-Icon.png" alt="Naming and Nomenclature Service">
+                <h3>Naming and Nomenclature</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint et perspiciatis doloribus,
+                    accusantium possimus sunt, libero veniam, error asperiores odio laborum nihil dolorem adipisci amet
+                    ipsam recusandae eius mollitia!</p>
+            </article>
+
+            <article class="col-lg-3 col-md-6 col-sm-12">
+                <img class="mx-auto" src="images/brandDevelopement-Icon.png" alt="Brand Development Service">
+                <h3>Brand Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eum vitae voluptates sed laborum
+                    repudiandae, laboriosam enim iste quae? Rerum, obcaecati officia consectetur voluptatum magnam ut
+                    voluptate vitae doloribus aspernatur? Maiores eius ipsa sit officiis?</p>
+            </article>
+
+            <article class="col-lg-3 col-md-6 col-sm-12">
+                <img class="mx-auto" src="images/digitalBranding-Icon.png" alt="Digital Branding Service">
+                <h3>Digital Branding</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugiat cupiditate itaque ratione
+                    iure tenetur vitae doloremque ad illum, similique fuga alias. Officia voluptatum cum quas
+                    voluptates qui. Explicabo aut adipisci magnam voluptatibus quo corrupti necessitatibus ad mollitia
+                    reprehenderit itaque!</p>
+            </article>
+
+            <article class="col-lg-3 col-md-6 col-sm-12">
+                <img class="mx-auto" src="images/packaging-Icon.png" alt="Packaging Design Service">
+                <h3>Packaging Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet culpa architecto omnis doloribus
+                    officia odio. Placeat voluptatem deleniti voluptates magnam itaque? Explicabo ipsam corporis
+                    tempore expedita? Cum nulla doloremque perferendis.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="page-footer bg-light pt-4">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col mb-4  d-flex  justify-content-md-center justify-content-sm-center justify-content-lg-start socialMedia">
+
+                    <!-- Facebook -->
+                    <a href="https://es-es.facebook.com/" target="_blank" class="fb-ic">
+                        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/?lang=es/" target="_blank" class="tw-ic">
+                        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+
+                    <!--Instagram-->
+                    <a href="https://www.instagram.com/?hl=es/" target="_blank" class="ins-ic">
+                        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+
+
+                </div>
+
+
+                <!--Grid column-->
+                <form class="col mb-4 form-inline d-flex  flex-wrap justify-content-md-center justify-content-sm-center justify-content-lg-end">
+
+                    <div class="form-group mx-sm-3 mb-2 ">
+                        <input type="email" class="form-control" name="email" id="inputEmail" placeholder="E-mail">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mb-2">Sign Up</button>
+
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright: Lorem Ipsum</div>
+
+
+    </footer>
+
+
+
+    <!--  Scripts  -->
+
+    <!-- <script src="js/jquery.slim.min.js"></script>   Small version of Jquery Framework. slim version of jQuery does not contain all the original jQuery functions. -->
+    <script src="js/poppers.min.js"></script> <!--  Útil para class="nav-link" algunas features de Jquery  -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,360 @@
+/*  GENERAL 
+==================================== */
+
+body {
+  font-family: 'Crimson Text', 'serif';
+}
+
+h1,h2,h3 {
+  font-family: 'Playfair Display', 'serif';
+}
+
+
+
+/*  NAVBAR
+===================================== */
+
+.navbar-nav {
+  height: 100vh;   /* FullScreen  */
+}
+
+.navbar-nav a {    /* Efecto de entrada fade desde la derecha de los links del menú  */
+  animation: fadeInRight 0.5s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.navbar-nav a:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+
+.navbar-nav a:nth-of-type(3) {
+  animation-delay: 0.45s;
+}
+
+.navbar-nav a:nth-of-type(4) {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.navbar-nav .contenedorMenu {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%); /*  Posicionarlo en el centro de la pantalla a nivel vertical  */
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.navbar-nav a {
+  display: block;
+  position: relative;    /*  Si se quita, el efecto fadeinRight no se realiza  */
+  opacity: 0;    /*  Ayuda al efecto fadeIn   */
+ 
+}
+
+
+/*  HAMBURGER BUTTON  */
+.hamburger {
+  border: none;
+}
+
+.animated-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+ 
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  
+  cursor: pointer;
+}
+
+.animated-icon span {   /*  Span= Representan las lineas de la hamburger  */
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  background: #e3f2fd;
+
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  
+  transition: .25s ease-in-out;
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+}
+
+.animated-icon span:nth-child(1) {  /*  Posicionamiento del Span  */
+  top: 0px;
+}
+
+.animated-icon span:nth-child(2),
+.animated-icon span:nth-child(3) {
+  top: 10px;
+}
+
+.animated-icon span:nth-child(4) {
+  top: 20px;
+}
+
+.animated-icon.open span:nth-child(1) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+.animated-icon.open span:nth-child(2) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.animated-icon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.animated-icon.open span:nth-child(4) {
+  top: 11px;
+  width: 0%;
+  left: 50%;
+}
+
+
+
+/*  HEADER
+===================================== */
+
+.carousel-item {
+  height: 100vh;   /* Reasizing carousel image   */
+  min-height: 350px;
+  background: no-repeat center center scroll;
+
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.carousel-inner .item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+
+
+
+/*  ABOUT 
+====================================== */
+
+#about img {
+  width: 100%;
+}
+
+
+
+/*  PROJECTS 
+====================================== */
+
+#projects .row div {
+  padding: 0;   /*  Sin espacio entre las 2 columnas */
+}
+
+.card-columns {
+  column-count: 2;   /*  Indica el número de columnas  */
+  column-gap: 0;   /* "card-columns" container define un column-gap por defecto para separar las cards, acá se elimina ese "column-gap". */ 
+}
+
+.card-columns .card {
+  margin-bottom: 0;
+  border: none;
+}
+
+.card {
+  opacity: 0;
+}
+
+.slideInLeft, .slideInRight {   /*  Corresponde al texto dentro de las cards  */
+  animation: slideInLeft 2s forwards;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+@keyframes slideInLeft {
+  0% {
+    right: 100%;
+  }
+
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+
+.slideInLeft p, .slideInRight p {
+  position: relative;
+  text-align: left;
+  color: #FFF;
+  margin-bottom: 20%;
+}
+
+.slideInLeft h3, .slideInRight h3 {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #FFF;
+  padding: 1em 0;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  line-height: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.slideInLeft:hover p, .slideInLeft:hover h3 {
+  opacity: 1;
+  animation: slideInLeft 1s forwards;
+}
+
+.slideInRight:hover p, .slideInRight:hover h3 {
+  opacity: 1;
+  animation: slideInRight 1s forwards;
+}
+
+
+
+
+/* SERVICES 
+====================================== */
+
+#services img {
+  width: 100px;
+  display: block;
+}
+
+
+
+
+/*  Media Queries  
+======================================= */
+
+
+/* Small devices (landscape phones, 576px and up)   */
+@media (min-width: 576px) {
+
+  .carousel-item {
+    height: 100vh;
+  }
+
+  .slideInLeft h3, .slideInRight h3 {  /*  Espacio y posicionamiento del texto (h3) dentro de la card  */
+    top: 0%;
+    margin-bottom: 0%;
+    line-height: 1;
+  }
+
+  .slideInLeft p, .slideInRight p {  /*  Espacio y posicionamiento del texto (p) dentro de la card  */
+    top: 40%;
+    margin-bottom: 0%;
+    line-height: 1;
+  }
+
+
+}
+
+
+/*  Mobile devices  */
+@media (max-width: 576px) {
+
+  .card-columns {
+    column-count: 1;
+  }
+
+  .carousel-item {
+    height: 50vh;   /*  Medirá mitad de pantalla (viewport)  */
+  }
+
+  #about .content h1 {
+    text-align: center;
+    margin-bottom:20px;
+  }
+
+  .lead {
+    text-align: justify;
+  }
+
+  .slideInLeft h3, .slideInRight h3 {   /*  Espacio y posicionamiento del texto (h3) dentro de la card  */
+    top: 0%;
+    margin-bottom: 0%;
+  }
+
+  .slideInLeft p, .slideInRight p {    /*  Espacio y posicionamiento del texto (p) dentro de la card  */
+    top: 40%;
+    margin-bottom: 0%;
+  }
+
+
+}
+
+
+/*/ Medium devices (tablets, 768px and up)   */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up)   */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up)   */
+@media (min-width: 1200px) {}
